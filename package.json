@@ -12,10 +12,10 @@
   "author": "Miku",
   "repository": {
     "type": "git",
-    "url": "https://github.com/.."
+    "url": "https://github.com/Miku-GNOME/twoFacedLovers-shell"
   },
   "bugs": {
-    "url": "https://github.com/.."
+    "url": "https://github.com/Miku-GNOME/twoFacedLovers-shell/issues"
   },
   "license": "MIT",
   "devDependencies": {
