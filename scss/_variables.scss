@@ -4,7 +4,7 @@ $bg_color: #F5F6F9;
 $fg_color: #333333;
 
 $selected_fg_color: #ffffff;
-$selected_bg_color: darken(#4a90d9,20%);
+$selected_bg_color: #3A6BF9;
 $selected_borders_color: darken($selected_bg_color, 20%);
 $borders_color: darken($bg_color,12%);
 $borders_edge: transparentize($fg_color, 0.9);
