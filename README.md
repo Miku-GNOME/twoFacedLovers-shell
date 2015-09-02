@@ -1,4 +1,4 @@
-This is far from ready. Do not fork it yet!
+Miku supports from GNOME 3.18 and above and it is far from ready. Do not fork it yet!
 
 ##Building
 
@@ -29,5 +29,3 @@ Run SASS watcher
 `
 gulp sass:watch
 `
-
-###Happy hacking ;)
