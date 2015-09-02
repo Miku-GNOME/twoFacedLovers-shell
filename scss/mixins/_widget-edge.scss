@@ -1,0 +1,4 @@
+@function _widget_edge($c:$borders_edge) {
+// outer highlight "used" on most widgets
+  @return 0 1px $c;
+}

@@ -24,7 +24,7 @@ cd twoFacedLovers-shell
 npm install
 `
 
-Run SASS watcher
+Run sass watcher
 
 `
 gulp sass:watch
