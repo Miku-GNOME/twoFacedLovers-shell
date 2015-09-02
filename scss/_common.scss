@@ -925,7 +925,7 @@ StScrollBar {
 
   .system-menu-action {
     color: $fg_color;
-    border-radius: 32px; /* wish we could do 50% */
+    border-radius: 32px; /* wish we could do 50% 32px default */ //Do buttons square? 
     padding: 13px;
     border: 1px solid lighten($borders_color,5%);
 

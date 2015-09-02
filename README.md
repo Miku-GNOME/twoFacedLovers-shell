@@ -1,4 +1,4 @@
-Miku supports from GNOME 3.18 and above and it is far from ready. Do not fork it yet!
+Miku supports GNOME 3.18 and above and it is far from ready. Do not fork it yet!
 
 ##Building
 
@@ -29,3 +29,9 @@ Run sass watcher
 `
 gulp sass:watch
 `
+
+##Todo
+- Make theme modular
+- Rewrite mixins & in general lots of rewritting!
+- Use Bootstrap 4 scss idioms
+- Generate skins / same as Miku GTK

@@ -829,7 +829,7 @@ StScrollBar {
 .system-menu-action {
   color: #333333;
   border-radius: 32px;
-  /* wish we could do 50% */
+  /* wish we could do 50% 32px default */
   padding: 13px;
   border: 1px solid #dfe2ec; }
   .system-menu-action:hover, .system-menu-action:focus {
