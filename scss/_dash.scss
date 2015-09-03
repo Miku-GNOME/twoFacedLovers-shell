@@ -46,6 +46,17 @@
 
   .overview-icon { icon-size: 96px; }
 }
+
+/*.overview-icon-with-label {
+    background:#F5F7FA;
+} */
+
+.overview-icon-with-label > StWidget > StWidget:last-child {
+  //background:#7B7D85;
+  color:#F5F7FA;
+  //border-radius: 3px;
+  //padding: 3px;
+}
 //.app-display { spacing: 20px; }
 
 .app-view-controls { //favorties | all toggle container
@@ -114,6 +125,7 @@
 .app-well-app.app-folder > .overview-icon {
   background-color: transparentize($osd_bg_color,.6);
 }
+
 
 .show-apps:checked .show-apps-icon,
 .show-apps:focus .show-apps-icon {

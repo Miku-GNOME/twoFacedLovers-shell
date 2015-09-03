@@ -77,7 +77,8 @@ StScrollBar {
   -slider-active-background-color: $selected_bg_color; //active trough fill
   -slider-active-border-color: darken($selected_bg_color,10%); //active trough border
   -slider-border-width: 1px;
-  -slider-handle-radius: 6px;
+  -slider-handle-radius: 8px;
+  color: $selected_bg_color;
 }
 
 /* Check Boxes */

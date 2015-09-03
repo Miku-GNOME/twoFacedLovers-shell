@@ -81,8 +81,8 @@
   }
 
   .list-search-result-content { spacing: 12px; padding: 12px; }
-  .list-search-result-title { font-size: 1.5em; color: darken($osd_fg_color,5%); }
-  .list-search-result-description { color: darken($osd_fg_color,15%); }
+  .list-search-result-title { font-size: 1.5em; color: $base_color; }
+  .list-search-result-description { color: $base_color; }
   .search-provider-icon { padding: 15px; }
   .search-provider-icon-more {
     width: 16px;
