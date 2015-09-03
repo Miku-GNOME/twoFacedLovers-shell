@@ -1,0 +1,78 @@
+/* TOP BAR */
+
+#panel {
+  background-color: black;
+  font-weight: bold;
+  height: 1.86em;
+
+  &.unlock-screen,
+  &.login-screen,
+  &.lock-screen {
+    background-color: transparent;
+  }
+
+  #panelLeft, #panelCenter { // spacing between activities<>app menu and such
+    spacing: 4px;
+  }
+
+  .panel-corner {
+    -panel-corner-radius: $panel-corner-radius;
+    -panel-corner-background-color: black;
+    -panel-corner-border-width: 2px;
+    -panel-corner-border-color: transparent;
+
+    &:active, &:overview, &:focus {
+      -panel-corner-border-color: lighten($selected_bg_color,5%);
+    }
+
+    &.lock-screen, &.login-screen, &.unlock-screen {
+      -panel-corner-radius: 0;
+      -panel-corner-background-color: transparent;
+      -panel-corner-border-color: transparent;
+    }
+  }
+
+  .panel-button {
+    -natural-hpadding: 12px;
+    -minimum-hpadding: 6px;
+    font-weight: bold;
+    color: #ccc;
+    transition-duration: 100ms;
+
+    .app-menu-icon {
+      -st-icon-style: symbolic;
+      margin-left: 4px;
+      margin-right: 4px;
+      //dimensions of the icon are hardcoded
+    }
+
+    &:hover {
+      color: lighten($fg_color, 10%);
+    }
+
+    &:active, &:overview, &:focus, &:checked {
+      // Trick due to St limitations. It needs a background to draw
+      // a box-shadow
+      background-color: rgba(0, 0, 0, 0.01);
+      box-shadow: inset 0 -2px 0px lighten($selected_bg_color,5%);
+      color: lighten($fg_color,10%);
+
+      & > .system-status-icon { icon-shadow: black 0 2px 2px; }
+    }
+
+    .system-status-icon { icon-size: 1.09em; padding: 0 5px; }
+    .unlock-screen &,
+    .login-screen &,
+    .lock-screen & {
+      color: lighten($fg_color, 10%);
+      &:focus, &:hover, &:active { color: lighten($fg_color, 10%); }
+    }
+  }
+
+  .panel-status-indicators-box,
+  .panel-status-menu-box {
+    spacing: 2px;
+  }
+
+  .screencast-indicator { color: $warning_color; }
+}

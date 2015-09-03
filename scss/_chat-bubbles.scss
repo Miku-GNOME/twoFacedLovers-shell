@@ -1,0 +1,21 @@
+//chat bubbles
+.chat-body { spacing: 5px; }
+.chat-response { margin: 5px; }
+.chat-log-message { color: darken($fg_color,10%); }
+.chat-new-group { padding-top: 1em; }
+.chat-received {
+  padding-left: 4px;
+  &:rtl { padding-left: 0px; padding-right: 4px; }
+}
+.chat-sent {
+  padding-left: 18pt;
+  color: darken($fg_color, 15%);
+  &:rtl { padding-left: 0; padding-right: 18pt; }
+}
+.chat-meta-message {
+  padding-left: 4px;
+  font-size: 9pt;
+  font-weight: bold;
+  color: darken($fg_color,20%);
+  &:rtl { padding-left: 0; padding-right: 4px; }
+}

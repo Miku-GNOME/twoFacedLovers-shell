@@ -1,0 +1,91 @@
+/* OVERVIEW */
+
+#overview {
+  spacing: 24px; //
+}
+
+.overview-controls {
+  padding-bottom: 32px;
+}
+
+  .window-picker { //container around window thumbnails
+    -horizontal-spacing: 32px;
+    -vertical-spacing: 32px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 48px;
+
+    &.external-monitor { padding: 32px; }
+  }
+
+  .window-clone-border {
+    border: 4px solid $selected_bg_color;
+    border-radius: 4px;
+    // For window decorations with round corners we can't match
+    // the exact shape when the window is scaled. So apply a shadow
+    // to fix that case
+    box-shadow: inset 0px 0px 0px 1px $selected_bg_color;
+  }
+  .window-caption {
+    spacing: 25px;
+    color: $osd_fg_color;
+    background-color: transparentize($osd_bg_color,0.3);
+    border-radius: 8px;
+    padding: 4px 12px;
+    -shell-caption-spacing: 12px;
+    &:hover { background-color: $selected_bg_color; color: $selected_fg_color; }
+  }
+
+  //search entry
+  .search-entry {
+    width: 320px;
+    padding: 7px 9px;
+    border-radius: 3px;
+    &:focus {
+      padding: 6px 8px;
+      border-width: 2px;
+    }
+
+    .search-entry-icon { icon-size: 1em; padding: 0 4px; color: transparentize($fg_color,.3); }
+
+    &:hover, &:focus {
+      .search-entry-icon { color: $fg_color; }
+    }
+  }
+
+  //search results
+
+  #searchResultsBin {
+    max-width: 1000px;
+  }
+
+  #searchResultsContent {
+    padding-left: 20px;
+    padding-right: 20px;
+    spacing: 16px;
+  }
+
+  .search-section { spacing: 16px; } // This should be equal to #searchResultsContent spacing
+  .search-section-content { spacing: 32px; } // This is the space between the provider icon and the results container
+  .search-statustext { // "no results"
+    @extend %status_text;
+  }
+  .list-search-results { spacing: 3px; }
+
+  .search-section-separator {
+    -gradient-height: 1px;
+    -gradient-start: rgba(255,255,255,0);
+    -gradient-end: rgba(255,255,255,0.1);
+    -margin-horizontal: 1.5em;
+    height: 1px;
+  }
+
+  .list-search-result-content { spacing: 12px; padding: 12px; }
+  .list-search-result-title { font-size: 1.5em; color: darken($osd_fg_color,5%); }
+  .list-search-result-description { color: darken($osd_fg_color,15%); }
+  .search-provider-icon { padding: 15px; }
+  .search-provider-icon-more {
+    width: 16px;
+    height: 16px;
+    background-image: url("resource:///org/gnome/shell/theme/more-results.svg");
+  }

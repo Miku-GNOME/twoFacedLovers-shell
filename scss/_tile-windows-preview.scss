@@ -1,0 +1,17 @@
+/* Tiled window previews */
+.tile-preview {
+  background-color: transparentize($selected_bg_color,0.5);
+  border: 1px solid $selected_bg_color;
+}
+
+.tile-preview-left.on-primary {
+  border-radius: $panel-corner-radius $panel-corner-radius 0 0;
+}
+
+.tile-preview-right.on-primary {
+  border-radius: 0 $panel-corner-radius 0 0;
+}
+
+.tile-preview-left.tile-preview-right.on-primary {
+  border-radius: $panel-corner-radius $panel-corner-radius 0 0;
+}

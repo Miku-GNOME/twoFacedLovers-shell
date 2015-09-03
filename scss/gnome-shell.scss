@@ -1,4 +1,33 @@
+//
+// Can we do this according to Shell UI?
+//
+
 
 @import "variables";
 @import "mixins";
+
 @import "common";
+@import "legacy-tray";
+@import "magnifier";
+@import "onscreen-keyboard";
+@import "ibus-popup";
+@import "network-dialogs";
+
+@import "misc-dialogs";          //make another component for it
+@import "popups";
+@import "osd";
+@import "app-switcher";
+@import "workspace-switcher";
+@import "tile-windows-preview";  // windows thumbails on overview
+@import "panel";
+@import "calendar";             //needs clean up
+@import "overview";             //needs cleanup
+@import "dash";                 //needs cleanup
+@import "collections";
+@import "workspace-pager";
+@import "notifications";
+@import "chat-bubbles";
+@import "hotplug";
+@import "login-dialog";
+@import "screen-shield";
+@import "looking-glass";

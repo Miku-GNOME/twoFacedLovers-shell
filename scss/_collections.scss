@@ -1,0 +1,36 @@
+  // Collections
+.app-folder-popup { //expanded collection
+  -arrow-border-radius: 8px;
+  -arrow-background-color: transparentize($osd_bg_color,0.7);
+  -arrow-base: 24px;
+  -arrow-rise: 11px;
+}
+.app-folder-popup-bin { padding: 5px; }
+.app-folder-icon {
+  padding: 5px;
+  spacing-rows: 5px;
+  spacing-columns: 5px;
+}
+
+.page-indicator {
+  padding: 15px 20px;
+
+  .page-indicator-icon {
+    width: 18px;
+    height: 18px;
+    background-image: url(resource:///org/gnome/shell/theme/page-indicator-inactive.svg);
+  }
+
+  &:hover .page-indicator-icon { background-image: url(resource:///org/gnome/shell/theme/page-indicator-hover.svg); }
+  &:active .page-indicator-icon { background-image: url(resource:///org/gnome/shell/theme/page-indicator-active.svg); }
+  &:checked .page-indicator-icon,
+  &:checked:active { background-image: url(resource:///org/gnome/shell/theme/page-indicator-checked.svg); }
+}
+
+.no-frequent-applications-label { @extend %status_text; }
+
+.app-well-app > .overview-icon.overview-icon-with-label,
+.grid-search-result .overview-icon.overview-icon-with-label {
+  padding: 10px 8px 5px 8px;
+  spacing: 4px;
+}

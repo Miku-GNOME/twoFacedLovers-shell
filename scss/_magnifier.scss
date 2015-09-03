@@ -1,0 +1,6 @@
+//magnifier
+
+.magnifier-zoom-region {
+  border: 2px solid $selected_bg_color;
+  &.full-screen { border-width: 0; }
+}
