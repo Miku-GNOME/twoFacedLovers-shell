@@ -1,6 +1,8 @@
 /* NOTIFICATIONS & MESSAGE TRAY */
 
-.url-highlighter { link-color: lighten($selected_bg_color,10%); }
+.url-highlighter { 
+  link-color: lighten($selected_bg_color,10%);
+}
 
 // Banners
 .notification-banner {
@@ -12,12 +14,24 @@
   background-color: $_bubble_bg_color;
   border: 1px solid $borders_color;
   //box-shadow: 0 1px 4px black;
-  &:hover { background-color: $_bubble_bg_color; }
-  &:focus { background-color: $_bubble_bg_color; }
+  &:hover {
+    background-color: $_bubble_bg_color;
+  }
+  &:focus {
+    background-color: $_bubble_bg_color;
+  }
 
-  .notification-icon { padding: 5px; }
-  .notification-content { padding: 5px; spacing: 5px; }
-  .secondary-icon { icon-size: 1.09em; }
+  .notification-icon {
+    padding: 5px;
+  }
+
+  .notification-content {
+    padding: 5px; spacing: 5px;
+  }
+
+  .secondary-icon {
+    icon-size: 1.09em;
+  }
   .notification-actions {
     background-color: $borders_color;
     padding-top: 2px;
@@ -26,9 +40,15 @@
   .notification-button {
     padding: 4px 4px 5px;
     background-color: darken($_bubble_bg_color,5%);
-    &:first-child { border-radius: 0 0 0 6px; }
-    &:last-child { border-radius: 0 0 6px 0; }
-    &:hover, &focus { background-color: darken($_bubble_bg_color,2%); }
+    &:first-child {
+      border-radius: 0 0 0 6px;
+    }
+    &:last-child {
+      border-radius: 0 0 6px 0;
+    }
+    &:hover, &focus {
+      background-color: darken($_bubble_bg_color,2%);
+    }
   }
 }
 
@@ -45,4 +65,6 @@
   border-radius: 0.9em; // should be 0.8 but whatever; wish I could do 50%;
 }
 
-.secondary-icon { icon-size: 1.09em; }
+.secondary-icon {
+  icon-size: 1.09em;
+}

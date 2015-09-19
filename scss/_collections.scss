@@ -18,16 +18,24 @@
   .page-indicator-icon {
     width: 18px;
     height: 18px;
-    background-image: url(resource:///org/gnome/shell/theme/page-indicator-inactive.svg);
+    background-image: url($img-page-indicator-inactive);
   }
 
-  &:hover .page-indicator-icon { background-image: url(resource:///org/gnome/shell/theme/page-indicator-hover.svg); }
-  &:active .page-indicator-icon { background-image: url(resource:///org/gnome/shell/theme/page-indicator-active.svg); }
+  &:hover .page-indicator-icon {
+    background-image: url($img-page-indicator-hover);
+  }
+  &:active .page-indicator-icon {
+    background-image: url($img-page-indicator-active);
+  }
   &:checked .page-indicator-icon,
-  &:checked:active { background-image: url(resource:///org/gnome/shell/theme/page-indicator-checked.svg); }
+  &:checked:active {
+    background-image: url($img-page-indicator-checked);
+  }
 }
 
-.no-frequent-applications-label { @extend %status_text; }
+.no-frequent-applications-label {
+  @extend %status_text;
+}
 
 .app-well-app > .overview-icon.overview-icon-with-label,
 .grid-search-result .overview-icon.overview-icon-with-label {

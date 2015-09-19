@@ -14,7 +14,7 @@
   }
 
   .placeholder {
-    background-image: url("resource:///org/gnome/shell/theme/dash-placeholder.svg");
+    background-image: url($img-dash-placeholder);
     background-size: contain;
     height: 24px;
   }

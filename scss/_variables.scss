@@ -1,11 +1,17 @@
 
+
+
+
+
 $base_color:                                        #F5F6F9;
 $bg_color:                                          #F5F6F9;
 $fg_color:                                          #333333;
 
 $selected_fg_color:                                 #ffffff;
 $selected_bg_color:                                 #3A6BF9;
-$selected_borders_color:                            darken($selected_bg_color, 20%);
+$selected-bg-color-2:                               #3A6BF9;
+$selected_borders_color:                            #B5B5B5;
+$selected-borders-color-2:                          darken($selected-bg-color-2, 20%);
 $borders_color:                                     darken($bg_color,12%);
 $borders_edge:                                      transparentize($fg_color, 0.9);
 $link_color:                                        lighten($selected_bg_color,20%);
@@ -36,3 +42,51 @@ $backdrop_fg_color:                                 mix($fg_color, $backdrop_bg_
 $backdrop_insensitive_color:                        lighten($backdrop_bg_color,15%);
 $backdrop_borders_color:                            mix($borders_color, $bg_color, 90%);
 $backdrop_dark_fill:                                mix($backdrop_borders_color,$backdrop_bg_color, 35%);
+
+//
+// IMAGES
+//
+
+$data-path:                                         "data";
+
+//Switches - _common.sccs
+$img-switch-off-us:                                 "#{$data-path}/toggle-off-us.svg";
+$img-switch-on-us:                                  "#{$data-path}/toggle-on-us.svg";
+$img-switch-off-intl:                               "#{$data-path}/toggle-off-intl.svg";
+$img-switch-on-intl:                                "#{$data-path}/toggle-on-intl.svg";
+
+//Checkboxes - _common.sccs
+$img-checkbox:                                      "#{$data-path}/checkbox.svg";
+$img-checkbox-off:                                  "#{$data-path}/checkbox-off.svg";
+$img-checkbox-focused:                              "#{$data-path}/checkbox-focused.svg";
+$img-checkbox-off-focused:                          "#{$data-path}/checkbox-off-focused.svg";
+
+//Process Working _common.sccs
+$img-process-working:                               "#{$data-path}/process-working.svg";
+
+//Corner Ripples _common.sccs
+$img-corner-ripple-ltr:                             "#{$data-path}/corner-ripple-ltr.svg";
+$img-corner-ripple-rtl:                             "#{$data-path}/corner-ripple-rtl.svg";
+
+//Window close _common.sccs
+$img-close-window:                                  "#{$data-path}/close-window.svg";
+
+//Calendar icons _calendar.sccs
+$img-calendar-arrow-left:                           "#{$data-path}/calendar-arrow-left.svg";
+$img-calendar-arrow-right:                          "#{$data-path}/calendar-arrow-right.svg";
+$img-calendar-today:                                "#{$data-path}/calendar-today.svg";
+
+//Collections  _collections.sccs
+$img-page-indicator-active:                         "#{$data-path}/page-indicator-active.svg";
+$img-page-indicator-inactive:                       "#{$data-path}/page-indicator-inactive.svg";
+$img-page-indicator-checked:                        "#{$data-path}/page-indicator-checked.svg";
+$img-page-indicator-hover:                          "#{$data-path}/page-indicator-hover.svg";
+
+//Dash  _dash.sccs
+$img-dash-placeholder:                              "#{$data-path}/dash-placeholder.svg";
+
+//More results  _overview.sccs
+$img-more-results:                                  "#{$data-path}/more-results.svg";
+
+// _screen-shield.sccs
+$img-noise-texture:                                 "#{$data-path}/noise-texture.svg";       

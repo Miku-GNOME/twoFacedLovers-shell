@@ -23,9 +23,15 @@
   border-radius: 3px;
   border: 1px solid $borders-color;
   color: white;
-  &:focus { @include button(focus); }
-  &:hover,&:checked { @include button(hover); }
-  &:active { @include button(active);}
+  &:focus {
+    @include button(focus);
+  }
+  &:hover,&:checked {
+    @include button(hover);
+  }
+  &:active {
+    @include button(active);
+  }
   &:grayed { //FIXME
     background-color: $osd_bg_color;
     color: $osd_fg_color;

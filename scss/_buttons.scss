@@ -1,9 +1,9 @@
 /* Buttons */
 .button {
-  border-radius: 3px;
-  border-width: 1px;
-  padding: 4px 32px;
-  @include button(normal);
+  border-radius: 0px;
+  border-width: 0px;
+  padding: 2px 32px;
+  @include button-test(normal);
   &:focus { @include button(focus); }
   &:insensitive { @include button(insensitive); }
   &:active { @include button(active); }
@@ -12,7 +12,7 @@
 
 .modal-dialog-linked-button {
   border-right-width: 1px;
-  @include button(normal);
+  @include button-test(normal);
   &:insensitive { @include button(insensitive); }
   &:active { @include button(active); }
   &:focus { @include button(focus); }

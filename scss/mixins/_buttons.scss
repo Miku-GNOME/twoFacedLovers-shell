@@ -1,3 +1,21 @@
+//None knows what they have done here, so remove it all!
+
+
+@mixin button-test($type) {
+
+  @if $type==normal {
+    color: $base_color;
+    background-color: #3A6BF9;
+    border-color: darken(#3A6BF9, 20%);
+    box-shadow: inset 0 1px lighten($osd_bg_color,10%);
+    text-shadow: 0 1px black;
+    icon-shadow: 0 1px black;
+  }
+
+}
+
+
+
 @function _border_color ($c) { @return darken($c,25%); } // colored buttons want
                                                          // the border form the
                                                          // base color
