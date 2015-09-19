@@ -142,11 +142,11 @@ StScrollBar {
 .ripple-box {
   width: 52px;
   height: 52px;
-  background-image: url("data/corner-ripple-ltr.svg");
+  background-image: url("data/corner-ripple-ltr.png");
   background-size: contain; }
 
 .ripple-box:rtl {
-  background-image: url("data/corner-ripple-rtl.svg"); }
+  background-image: url("data/corner-ripple-rtl.png"); }
 
 .popup-menu-arrow {
   width: 16px;
